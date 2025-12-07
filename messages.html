@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages / Streakit</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<nav>
+    <div class="nav_logo-wrapper">
+        <a href="index.html">
+            <img class="nav_logo" src="images/image.png" alt="Streakit Logo">
+        </a>
+    </div>
+
+    <a href="index.html" class="Menu_options">
+        <span class="material-icons">home</span>
+        <h2>Home</h2>
+    </a>
+
+    <a href="explore.html" class="Menu_options">
+        <span class="material-icons">tag</span>
+        <h2>Explore</h2>
+    </a>
+
+    <a href="community.html" class="Menu_options">
+        <span class="material-icons">group</span>
+        <h2>Community</h2>
+    </a>
+
+    <a href="notifications.html" class="Menu_options">
+        <span class="material-icons">notifications</span>
+        <h2>Notification</h2>
+    </a>
+
+    <a href="messages.html" class="Menu_options active">
+        <span class="material-icons">email</span>
+        <h2>Messages</h2>
+    </a>
+
+    <a href="bookmarks.html" class="Menu_options">
+        <span class="material-icons">bookmark</span>
+        <h2>Bookmarks</h2>
+    </a>
+
+    <a href="profile.html" class="Menu_options">
+        <span class="material-icons">person</span>
+        <h2>Profile</h2>
+    </a>
+
+    <button class="tweet_btn">Streak it!</button>
+</nav>
+
+<main>
+    <div class="header">
+        <h2>Messages</h2>
+    </div>
+
+    <!-- Search Messages -->
+    <div class="message_search">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Search Direct Messages">
+    </div>
+
+    <!-- Messages List -->
+    <div class="message_list">
+        <div class="message_item">
+            <div class="message_avatar">
+                <img src="https://i.pravatar.cc/150?img=12" alt="profile">
+            </div>
+            <div class="message_content">
+                <div class="message_header">
+                    <h3>Streakit Dev</h3>
+                    <span class="message_time">2h</span>
+                </div>
+                <p class="message_preview">Hey! Check out the new features...</p>
+            </div>
+        </div>
+
+        <div class="message_item">
+            <div class="message_avatar">
+                <img src="https://i.pravatar.cc/150?img=33" alt="profile">
+            </div>
+            <div class="message_content">
+                <div class="message_header">
+                    <h3>Tech Updates</h3>
+                    <span class="message_time">4h</span>
+                </div>
+                <p class="message_preview">Interested in collaboration?</p>
+            </div>
+        </div>
+
+        <div class="message_item">
+            <div class="message_avatar">
+                <img src="https://i.pravatar.cc/150?img=47" alt="profile">
+            </div>
+            <div class="message_content">
+                <div class="message_header">
+                    <h3>Design Daily</h3>
+                    <span class="message_time">1d</span>
+                </div>
+                <p class="message_preview">Thanks for the design feedback!</p>
+            </div>
+        </div>
+
+        <div class="message_item">
+            <div class="message_avatar">
+                <img src="https://i.pravatar.cc/150?img=21" alt="profile">
+            </div>
+            <div class="message_content">
+                <div class="message_header">
+                    <h3>Code Daily</h3>
+                    <span class="message_time">2d</span>
+                </div>
+                <p class="message_preview">Your code is really clean!</p>
+            </div>
+        </div>
+
+        <div class="message_item">
+            <div class="message_avatar">
+                <img src="https://i.pravatar.cc/150?img=58" alt="profile">
+            </div>
+            <div class="message_content">
+                <div class="message_header">
+                    <h3>Focus Beats</h3>
+                    <span class="message_time">3d</span>
+                </div>
+                <p class="message_preview">New playlist is live! 🎵</p>
+            </div>
+        </div>
+
+        <div class="message_item">
+            <div class="message_avatar">
+                <img src="https://i.pravatar.cc/150?img=64" alt="profile">
+            </div>
+            <div class="message_content">
+                <div class="message_header">
+                    <h3>Web Master</h3>
+                    <span class="message_time">4d</span>
+                </div>
+                <p class="message_preview">Can we schedule a call?</p>
+            </div>
+        </div>
+
+        <div class="message_item">
+            <div class="message_avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="profile">
+            </div>
+            <div class="message_content">
+                <div class="message_header">
+                    <h3>Creative Mind</h3>
+                    <span class="message_time">5d</span>
+                </div>
+                <p class="message_preview">Love your work! Let's connect</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Input Area -->
+    <div class="message_input_area">
+        <input type="text" placeholder="Type your message...">
+        <button class="message_send_btn">
+            <span class="material-icons">send</span>
+        </button>
+    </div>
+</main>
+
+<aside>
+    <div class="aside_input">
+        <span class="material-icons aside_search-icon">search</span>
+        <input type="text" placeholder="Search Streakit">
+    </div>
+
+    <div class="aside_container">
+        <h2>What's happening?</h2>
+        
+        <div class="trending-card">
+            <div class="trending-category">Technology · Trending</div>
+            <div class="trending-tag">#StreakitLaunch</div>
+            <div class="trending-tweets">5,678 posts</div>
+        </div>
+
+        <div class="trending-card">
+            <div class="trending-category">Web Development</div>
+            <div class="trending-tag">#NoJavaScript</div>
+            <div class="trending-tweets">12.3K posts</div>
+        </div>
+
+        <div class="trending-card">
+            <div class="trending-category">Design</div>
+            <div class="trending-tag">#PureCSS</div>
+            <div class="trending-tweets">3,456 posts</div>
+        </div>
+    </div>
+</aside>
+</body>
+<script src="js/main.js" defer></script>
+</html>

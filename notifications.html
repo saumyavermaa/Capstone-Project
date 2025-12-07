@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications / Streakit</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<nav>
+    <div class="nav_logo-wrapper">
+        <a href="index.html">
+            <img class="nav_logo" src="images/image.png" alt="Streakit Logo">
+        </a>
+    </div>
+
+    <a href="index.html" class="Menu_options">
+        <span class="material-icons">home</span>
+        <h2>Home</h2>
+    </a>
+
+    <a href="explore.html" class="Menu_options">
+        <span class="material-icons">tag</span>
+        <h2>Explore</h2>
+    </a>
+
+    <a href="community.html" class="Menu_options">
+        <span class="material-icons">group</span>
+        <h2>Community</h2>
+    </a>
+
+    <a href="notifications.html" class="Menu_options active">
+        <span class="material-icons">notifications</span>
+        <h2>Notification</h2>
+    </a>
+
+    <a href="messages.html" class="Menu_options">
+        <span class="material-icons">email</span>
+        <h2>Messages</h2>
+    </a>
+
+    <a href="bookmarks.html" class="Menu_options">
+        <span class="material-icons">bookmark</span>
+        <h2>Bookmarks</h2>
+    </a>
+
+    <a href="profile.html" class="Menu_options">
+        <span class="material-icons">person</span>
+        <h2>Profile</h2>
+    </a>
+
+    <button class="tweet_btn">Streak it!</button>
+</nav>
+
+<main>
+    <div class="header">
+        <h2>Notifications</h2>
+    </div>
+
+    <!-- Tabs for filtering notifications -->
+    <div class="notification_tabs">
+        <a href="#all-notif" class="notif_tab active_notif_tab">All</a>
+        <a href="#mentions-notif" class="notif_tab">Mentions</a>
+        <a href="#follows-notif" class="notif_tab">Follows</a>
+    </div>
+
+    <!-- All Notifications -->
+    <div id="all-notif" class="notif_content active_notif_content">
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=12" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Streakit Dev</strong> posted something you might like</p>
+                <p class="notif_mention">Streakit 1.0 is now available! #Streakit #Launch</p>
+                <p class="notif_time">2 hours ago</p>
+            </div>
+            <span class="material-icons notif_icon">favorite</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=33" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Tech Updates</strong> started following you</p>
+                <p class="notif_time">4 hours ago</p>
+            </div>
+            <span class="material-icons notif_icon">person_add</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=47" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Design Daily</strong> liked your post</p>
+                <p class="notif_mention">Building modern UIs with CSS is amazing!</p>
+                <p class="notif_time">6 hours ago</p>
+            </div>
+            <span class="material-icons notif_icon">favorite</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=21" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Code Daily</strong> retweeted your post</p>
+                <p class="notif_mention">CSS only social media platform</p>
+                <p class="notif_time">8 hours ago</p>
+            </div>
+            <span class="material-icons notif_icon">repeat</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=58" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Focus Beats</strong> replied to your post</p>
+                <p class="notif_mention">Great UI! Love the minimalist design</p>
+                <p class="notif_time">1 day ago</p>
+            </div>
+            <span class="material-icons notif_icon">chat</span>
+        </div>
+    </div>
+
+    <!-- Mentions Tab -->
+    <div id="mentions-notif" class="notif_content">
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=33" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Tech Updates</strong> mentioned you</p>
+                <p class="notif_mention">@Streakit check this amazing feature!</p>
+                <p class="notif_time">3 hours ago</p>
+            </div>
+            <span class="material-icons notif_icon">chat</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=21" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Code Daily</strong> mentioned you</p>
+                <p class="notif_mention">@Streakit this is really cool</p>
+                <p class="notif_time">5 hours ago</p>
+            </div>
+            <span class="material-icons notif_icon">chat</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=47" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Design Daily</strong> mentioned you</p>
+                <p class="notif_mention">@Streakit the design is perfect</p>
+                <p class="notif_time">1 day ago</p>
+            </div>
+            <span class="material-icons notif_icon">chat</span>
+        </div>
+    </div>
+
+    <!-- Follows Tab -->
+    <div id="follows-notif" class="notif_content">
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=33" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Tech Updates</strong> started following you</p>
+                <p class="notif_time">4 hours ago</p>
+            </div>
+            <span class="material-icons notif_icon">person_add</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=12" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Streakit Dev</strong> started following you</p>
+                <p class="notif_time">1 day ago</p>
+            </div>
+            <span class="material-icons notif_icon">person_add</span>
+        </div>
+
+        <div class="notification_item">
+            <div class="notif_avatar">
+                <img src="https://i.pravatar.cc/150?img=58" alt="profile">
+            </div>
+            <div class="notif_body">
+                <p><strong>Focus Beats</strong> started following you</p>
+                <p class="notif_time">2 days ago</p>
+            </div>
+            <span class="material-icons notif_icon">person_add</span>
+        </div>
+    </div>
+</main>
+
+<aside>
+    <div class="aside_input">
+        <span class="material-icons aside_search-icon">search</span>
+        <input type="text" placeholder="Search Streakit">
+    </div>
+
+    <div class="aside_container">
+        <h2>What's happening?</h2>
+        
+        <div class="trending-card">
+            <div class="trending-category">Technology · Trending</div>
+            <div class="trending-tag">#StreakitLaunch</div>
+            <div class="trending-tweets">5,678 posts</div>
+        </div>
+
+        <div class="trending-card">
+            <div class="trending-category">Web Development</div>
+            <div class="trending-tag">#NoJavaScript</div>
+            <div class="trending-tweets">12.3K posts</div>
+        </div>
+
+        <div class="trending-card">
+            <div class="trending-category">Design</div>
+            <div class="trending-tag">#PureCSS</div>
+            <div class="trending-tweets">3,456 posts</div>
+        </div>
+    </div>
+</aside>
+</body>
+<script src="js/main.js" defer></script>
+</html>
