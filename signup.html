@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up / Streakit</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+    }
+    .signup-container {
+      background: rgba(255,255,255,0.08);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      padding: 2.5rem 2rem;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(8px);
+    }
+    .signup-logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .signup-title {
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .signup-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .signup-form input {
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: background 0.2s;
+    }
+    .signup-form input:focus {
+      background: rgba(255,255,255,0.28);
+    }
+    .signup-btn {
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      border: none;
+      background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.2s;
+    }
+    .signup-btn:hover {
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    }
+    .signup-footer {
+      margin-top: 1.2rem;
+      color: #bbb;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    .material-icons {
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <img src="images/image.png" alt="Streakit Logo" class="signup-logo">
+    <div class="signup-title"><span class="material-icons">person_add</span>Sign Up for Streakit</div>
+    <form class="signup-form" id="signupForm">
+      <input type="text" id="signupUsername" placeholder="Username" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <input type="password" id="signupConfirm" placeholder="Confirm Password" required>
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+    <div class="signup-footer">Already have an account? <a href="login.html" style="color:#667eea;">Login</a></div>
+  </div>
+  <script>
+    // Store credentials in localStorage for demo purposes
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var username = document.getElementById('signupUsername').value;
+      var password = document.getElementById('signupPassword').value;
+      var confirm = document.getElementById('signupConfirm').value;
+      if (password !== confirm) {
+        alert('Passwords do not match!');
+        return;
+      }
+      if (username && password) {
+        localStorage.setItem('streakit_user', username);
+        localStorage.setItem('streakit_pass', password);
+        alert('Sign up successful! You can now login.');
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>
